@@ -1,9 +1,10 @@
+import Header from './components/Header'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router} from 'react-router-dom'
-import Home from './pages/Home'
 import RoutersApp from './components/RouteursApp'
 import reportWebVitals from './reportWebVitals';
+
 
 
 
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Home />
+      <Header />
       <RoutersApp />
     </Router>
 </React.StrictMode>,

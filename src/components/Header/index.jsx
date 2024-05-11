@@ -4,9 +4,12 @@ import '../../styles/header.css'
  
 function Header() {
     return ( 
-        <header className="header"> 
+        
+        <header className="header-container-wrapper"> 
+        <div className='header-container'>
             <LogoHeader />
             <Nav className='nav_header' />
+        </div>
         </header>  
     )
 }

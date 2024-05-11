@@ -1,8 +1,12 @@
-.header {
+.header-container-wrapper {
+    margin: 0% auto; /* Pour centrer le wrapper par rapport à la page */
+    width: 1240px;
+}
+
+.header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 1.5% 5% 0 5%;
 }
 
 .header nav{
@@ -10,22 +14,17 @@
         justify-content: flex-end;
 }
 
-.header nav a { 
+.header nav a:focus {
+    text-decoration-line: underline;
+} 
+
+.header-container nav a { 
     font-size: 24px;
     color: #000000;
     text-decoration: none;
     padding-left: 50px;
 }
 
-.header nav a:focus {
-    text-decoration-line: underline;
-} 
-
-
-/* .header nav:hover {
-    text-decoration-line: underline;
-}   
-*/
 
 
 
