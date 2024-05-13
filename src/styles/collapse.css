@@ -1,0 +1,46 @@
+.wrapper-collapse {
+    width: 85%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse-about {
+    margin-bottom: 1.5%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.collapse-header {
+    background-color: #f71f1f;
+    padding: 0px 20px 0px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.collapse-header p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.collapse-content {
+    margin: 0px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.24);
+    font-size: 18px;
+}
+
+.arrow-img {
+    width: 24px;
+    height: 13px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-img.down {
+    transform: rotate(180deg);
+}
