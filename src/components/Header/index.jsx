@@ -1,5 +1,5 @@
-import LogoHeader from '../LogoHeader'
-import Nav from '../Nav'
+import logo from '../../assets/LOGO_header.png'
+import { Link } from 'react-router-dom'
 import '../../styles/header.css'
  
 function Header() {
@@ -7,8 +7,15 @@ function Header() {
         
         <header className="header-container-wrapper"> 
         <div className='header-container'>
-            <LogoHeader />
-            <Nav className='nav_header' />
+            <div>
+                <img src={logo} alt="Logo du site" />
+            </div>
+            <div>
+                <nav>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/about">À propos</Link>
+                </nav>
+            </div>
         </div>
         </header>  
     )

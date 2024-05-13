@@ -1,19 +1,25 @@
-import BannerImg from '../../assets/Mask Group.png'
-import '../../styles/banner.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../../styles/banner.css';
 
-function Banner() {
+function Banner({ image, title }) {
     return (
         <div className="banner-container-wrapper">
-            <div className="banner-container">
                 <div className='banner-img-container'>
-                    <img src={BannerImg} alt="Banner" className="banner-img" />
-                    <div className="banner-text">
-                        <h1>Chez vous, partout et ailleurs</h1>
-                    </div>
+                    <img src={image} alt="Banner" className="banner-img" />
+                    {title && (
+                        <div className="banner-text">
+                            <h1>{title}</h1>
+                        </div>
+                    )}
                 </div>
-            </div>
         </div>
-    )
+    );
 }
+
+Banner.propTypes = {
+    image: PropTypes.string.isRequired, // L'image doit être une URL
+    title: PropTypes.string, // Le titre est facultatif
+};
 
 export default Banner;
