@@ -13,18 +13,18 @@ function Collapse({ title, content, className }) {
     return (
         <div className={className}>
             <div className="collapse-header" onClick={toggleCollapse}>
-                <p>{title}</p>
+                <h2>{title}</h2>
                 <img
                   src={arrowImage}
-                  alt="Arrow"
+                  alt="Collapse arrow"
                   className={`arrow-img ${isOpen ? 'down' : 'up'}`}
                   onClick={toggleCollapse}
                 />
             </div>
             {isOpen && (
-                <p className="collapse-content">
+                <div className="collapse-content">
                     {typeof content === 'string' ? content : content()}
-                </p>
+                </div>
             )}
         </div>
     );

@@ -1,0 +1,28 @@
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+  .rating img {
+    margin-left: 12px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* mobile */
+    .rating {
+      display: flex;
+      height: 30px;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+  }
+
+
+  .rating img {
+    margin-right: 6px;
+    margin-left: 0px;
+    width: 13px;
+    height: 13px;
+  }
+}

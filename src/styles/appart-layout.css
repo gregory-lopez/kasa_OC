@@ -1,0 +1,45 @@
+.appart-page_wrapper {
+    margin: 0 5%;
+  }
+  
+.appart-page-info_container {
+    display: flex;
+  }
+  
+.appart-page-host-info_container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  
+.appart-page-collapse_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  
+@media only screen and (max-width: 768px) {
+  /* mobile */
+  .appartment-info_container {
+    width: 100%; 
+}
+  .appart-page-info_container {
+    flex-direction: column;
+  }
+
+  .appart-page-host-info_container {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .appart-page-collapse_container {
+    width: 100%;
+    margin: 1% 0 5% 0;
+    flex-direction: column;
+}
+
+}

@@ -5,8 +5,8 @@ import '../../styles/footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <img src={logo} alt="Logo" className="footer-logo" />
-      <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+      <img src={logo} alt="Kasa Logo" className="footer-logo" />
+      <h2 className="footer-text">© 2020 Kasa. All rights reserved</h2>
     </footer>
   );
 }

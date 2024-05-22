@@ -1,0 +1,40 @@
+.host-info {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+    margin-right: 3px;
+    justify-content: center;
+}
+
+.host-picture img {
+    border-radius: 50px;
+    width: 63px;
+    height: auto;
+}
+
+.host-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.host-name p{
+    font-size: 18px;
+    color:#FF6060;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    /* mobile */
+    .host-name p {
+    font-size: 12px;
+    }
+    
+    .host-picture img {
+        width: 32px;
+        height: auto;
+    }
+}

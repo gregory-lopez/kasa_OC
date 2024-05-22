@@ -8,14 +8,12 @@ import ErrorPage from '../../pages/ErrorPage'
 
 function RoutersApp() {
     return (
-
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Appart/:id" element={<Appart />} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
     </Routes>
-
       )
 }
 

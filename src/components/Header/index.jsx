@@ -7,10 +7,12 @@ function Header() {
         
         <header className="header-container-wrapper"> 
         <div className='header-container'>
-            <div>
-                <img src={logo} alt="Logo du site" />
+            <div className='header-logo_container'>
+                <h1>
+                <img src={logo} alt="Kasa" />
+                </h1>
             </div>
-            <div>
+            <div className='header-nav_container'>
                 <nav>
                     <Link to="/">Accueil</Link>
                     <Link to="/about">À propos</Link>
