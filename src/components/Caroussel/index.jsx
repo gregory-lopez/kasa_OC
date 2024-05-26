@@ -14,7 +14,6 @@ function Carousel({ images, title }) {
       setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
     };
 
-  
     const imageCounter = `${currentImageIndex + 1} / ${images.length}`;
   
     return (

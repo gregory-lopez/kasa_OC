@@ -6,8 +6,8 @@ import '../../styles/error.css';
           <div className="error-container">
             <h2 className="error-heading">404</h2>
             <h3 className="error-message">
-              <span class="short-top">Oups! La page que</span> 
-              <span class="long-bottom"> vous demandez n'existe pas.</span>
+              <span className="short-top">Oups! La page que</span> 
+              <span className="long-bottom"> vous demandez n'existe pas.</span>
             </h3>
             <Link to="/" className="error-link">Retourner sur la page d’accueil</Link>
           </div>
